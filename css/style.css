@@ -3,13 +3,56 @@
     margin: 0 auto;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
+body {
+    background-image: url();
 }
 
 
-.item {
+img {
+    width: 400px;
+    height: 300px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.carousel {
+    position: relative;
+    height: 300px;
+    width: 400px;
+}
+
+.active {
     display: block;
-    object-fit: contain;
+}
+
+.hidden {
+    display: none;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+
+.next {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    padding: 2%;
+}
+
+.previous {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    padding: 2%;
 }
