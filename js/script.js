@@ -36,10 +36,11 @@ previous.addEventListener('click', function () {
 
         items[activeItem].classList.add('active');
         items[activeItem].classList.remove('hidden');
-
+        console.log("valore item", activeItem)
 
         if (activeItem === items.length + 1) {
             previous.classList.add('hidden');
         }
+        console.log("valore item", activeItem)
     }
 });
